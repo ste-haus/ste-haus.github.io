@@ -1,0 +1,53 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350px" height="350px" version="1.1">
+	<g  fill="none" 
+        stroke="#341c3f"
+        stroke-width="15"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+		<path 
+            d=" M 200 30
+                C 100 50
+                  75 125
+                  175 175
+                S 250 300
+                  150 320"
+            stroke-width="20"
+        />
+		<path 
+			d="	M 50 115
+				L 300 115"
+		/>
+		<path 
+			d="	M 50 175
+				L 300 175"
+		/>
+		<path 
+			d="	M 50 235
+				L 300 235"
+		/>
+	</g>
+</svg>
+
+
+<!--
+d=" M 400 200
+                C 300 225
+                  300 325
+                  400 350
+                S 500 475
+                  400 500"
+
+
+
+            d=" M 200 400
+                C 225 500
+                  325 500
+                  350 400
+                S 475 300
+                  500 400"
+
+
+
+-->
