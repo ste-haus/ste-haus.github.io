@@ -5,6 +5,7 @@
         stroke-width="15"
         stroke-linecap="round"
         stroke-linejoin="round"
+        transform="rotate(-45 175 175)"
     >
 		<path 
             d=" M 200 30
