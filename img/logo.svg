@@ -1,54 +1,30 @@
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350px" height="350px" version="1.1">
-	<g  fill="none" 
-        stroke="#341c3f"
-        stroke-width="15"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        transform="rotate(-45 175 175)"
-    >
-		<path 
-            d=" M 200 30
-                C 100 50
-                  75 125
-                  175 175
-                S 250 300
-                  150 320"
-            stroke-width="20"
-        />
-		<path 
-			d="	M 50 115
-				L 300 115"
-		/>
-		<path 
-			d="	M 50 175
-				L 300 175"
-		/>
-		<path 
-			d="	M 50 235
-				L 300 235"
-		/>
+<svg id="ste-logo" data-name="ste-logo" xmlns="http://www.w3.org/2000/svg" viewBox="-25 -25 410 370">
+  <defs>
+    <style>
+      .edge {
+        fill: none;
+        stroke: #222222;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 16px;
+      }
+    </style>
+    <filter id="shadow">
+      <feOffset result="offOut" in="SourceGraphic" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+  <g id="cube" filter="url(#shadow)">
+	  <line class="edge" x1="220" y1="61" x2="107" y2="8"/>
+	  <line class="edge" x1="107" y1="8" x2="11" y2="55"/>
+	  <line class="edge" x1="11" y1="56" x2="171" y2="125"/>
+	  <line class="edge" x1="171" y1="125" x2="173" y2="315"/>
+	  <line class="edge" x1="173" y1="317" x2="8" y2="243"/>
+	  <line class="edge" x1="123" y1="59" x2="234" y2="8"/>
+	  <line class="edge" x1="234" y1="8" x2="339" y2="54"/>
+	  <line class="edge" x1="335" y1="54" x2="222" y2="106"/>
+	  <line class="edge" x1="339" y1="54" x2="339" y2="235"/>
+	  <line class="edge" x1="339" y1="240" x2="222" y2="297"/>
 	</g>
 </svg>
-
-
-<!--
-d=" M 400 200
-                C 300 225
-                  300 325
-                  400 350
-                S 500 475
-                  400 500"
-
-
-
-            d=" M 200 400
-                C 225 500
-                  325 500
-                  350 400
-                S 475 300
-                  500 400"
-
-
-
--->
