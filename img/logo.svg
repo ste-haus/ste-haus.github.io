@@ -6,16 +6,11 @@
         stroke: #222222;
         stroke-linecap: round;
         stroke-miterlimit: 10;
-        stroke-width: 16px;
+        stroke-width: 18px;
       }
     </style>
-    <filter id="shadow">
-      <feOffset result="offOut" in="SourceGraphic" />
-      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
-      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
-    </filter>
   </defs>
-  <g id="cube" filter="url(#shadow)">
+  <g id="cube" >
 	  <line class="edge" x1="220" y1="61" x2="107" y2="8"/>
 	  <line class="edge" x1="107" y1="8" x2="11" y2="55"/>
 	  <line class="edge" x1="11" y1="56" x2="171" y2="125"/>
