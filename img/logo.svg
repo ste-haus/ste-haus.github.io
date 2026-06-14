@@ -2,11 +2,17 @@
   <defs>
     <style>
       .edge {
-        stroke: #d0d8e8;
+        stroke: #1a1a2e;
         stroke-width: 18px;
         stroke-linecap: round;
         stroke-miterlimit: 10;
         fill: none;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .edge {
+          stroke: #d0d8e8;
+        }
       }
     </style>
   </defs>
