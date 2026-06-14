@@ -7,24 +7,6 @@
         stroke-linecap: round;
         stroke-miterlimit: 10;
         fill: none;
-        stroke-dasharray: 400;
-        stroke-dashoffset: 400;
-        animation: draw-line 1.8s ease forwards;
-      }
-
-      .edge:nth-child(1)  { animation-delay: 0.0s; }
-      .edge:nth-child(2)  { animation-delay: 0.12s; }
-      .edge:nth-child(3)  { animation-delay: 0.24s; }
-      .edge:nth-child(4)  { animation-delay: 0.36s; }
-      .edge:nth-child(5)  { animation-delay: 0.48s; }
-      .edge:nth-child(6)  { animation-delay: 0.15s; }
-      .edge:nth-child(7)  { animation-delay: 0.27s; }
-      .edge:nth-child(8)  { animation-delay: 0.39s; }
-      .edge:nth-child(9)  { animation-delay: 0.51s; }
-      .edge:nth-child(10) { animation-delay: 0.63s; }
-
-      @keyframes draw-line {
-        to { stroke-dashoffset: 0; }
       }
     </style>
   </defs>
