@@ -2,24 +2,42 @@
   <defs>
     <style>
       .edge {
-        fill: none;
-        stroke: #222222;
+        stroke: #d0d8e8;
+        stroke-width: 18px;
         stroke-linecap: round;
         stroke-miterlimit: 10;
-        stroke-width: 18px;
+        fill: none;
+        stroke-dasharray: 400;
+        stroke-dashoffset: 400;
+        animation: draw-line 1.8s ease forwards;
+      }
+
+      .edge:nth-child(1)  { animation-delay: 0.0s; }
+      .edge:nth-child(2)  { animation-delay: 0.12s; }
+      .edge:nth-child(3)  { animation-delay: 0.24s; }
+      .edge:nth-child(4)  { animation-delay: 0.36s; }
+      .edge:nth-child(5)  { animation-delay: 0.48s; }
+      .edge:nth-child(6)  { animation-delay: 0.15s; }
+      .edge:nth-child(7)  { animation-delay: 0.27s; }
+      .edge:nth-child(8)  { animation-delay: 0.39s; }
+      .edge:nth-child(9)  { animation-delay: 0.51s; }
+      .edge:nth-child(10) { animation-delay: 0.63s; }
+
+      @keyframes draw-line {
+        to { stroke-dashoffset: 0; }
       }
     </style>
   </defs>
-  <g id="cube" >
-	  <line class="edge" x1="220" y1="61" x2="107" y2="8"/>
-	  <line class="edge" x1="107" y1="8" x2="11" y2="55"/>
-	  <line class="edge" x1="11" y1="56" x2="171" y2="125"/>
-	  <line class="edge" x1="171" y1="125" x2="173" y2="315"/>
-	  <line class="edge" x1="173" y1="317" x2="8" y2="243"/>
-	  <line class="edge" x1="123" y1="59" x2="234" y2="8"/>
-	  <line class="edge" x1="234" y1="8" x2="339" y2="54"/>
-	  <line class="edge" x1="335" y1="54" x2="222" y2="106"/>
-	  <line class="edge" x1="339" y1="54" x2="339" y2="235"/>
-	  <line class="edge" x1="339" y1="240" x2="222" y2="297"/>
-	</g>
+  <g id="cube">
+    <line class="edge" x1="220" y1="61" x2="107" y2="8"/>
+    <line class="edge" x1="107" y1="8" x2="11" y2="55"/>
+    <line class="edge" x1="11" y1="56" x2="171" y2="125"/>
+    <line class="edge" x1="171" y1="125" x2="173" y2="315"/>
+    <line class="edge" x1="173" y1="317" x2="8" y2="243"/>
+    <line class="edge" x1="123" y1="59" x2="234" y2="8"/>
+    <line class="edge" x1="234" y1="8" x2="339" y2="54"/>
+    <line class="edge" x1="335" y1="54" x2="222" y2="106"/>
+    <line class="edge" x1="339" y1="54" x2="339" y2="235"/>
+    <line class="edge" x1="339" y1="240" x2="222" y2="297"/>
+  </g>
 </svg>

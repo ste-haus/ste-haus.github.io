@@ -2,91 +2,7 @@
     <head>
         <title>S+E Haus</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-
-            body {
-                background: #0a0a0f;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                min-height: 100vh;
-                overflow: hidden;
-                position: relative;
-            }
-
-            .bg-grid {
-                position: absolute;
-                inset: 0;
-                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='34.64'%3E%3Cpath d='M20,0 L10,17.32 L-10,17.32 L-20,0 L-10,-17.32 L10,-17.32Z' fill='none' stroke='rgba(255,255,255,0.02)' stroke-width='1'/%3E%3Cpath d='M50,17.32 L40,34.64 L20,34.64 L10,17.32 L20,0 L40,0Z' fill='none' stroke='rgba(255,255,255,0.02)' stroke-width='1'/%3E%3Cpath d='M80,0 L70,17.32 L50,17.32 L40,0 L50,-17.32 L70,-17.32Z' fill='none' stroke='rgba(255,255,255,0.02)' stroke-width='1'/%3E%3Cpath d='M20,34.64 L10,51.96 L-10,51.96 L-20,34.64 L-10,17.32 L10,17.32Z' fill='none' stroke='rgba(255,255,255,0.02)' stroke-width='1'/%3E%3Cpath d='M80,34.64 L70,51.96 L50,51.96 L40,34.64 L50,17.32 L70,17.32Z' fill='none' stroke='rgba(255,255,255,0.02)' stroke-width='1'/%3E%3Cpath d='M50,-17.32 L40,0 L20,0 L10,-17.32 L20,-34.64 L40,-34.64Z' fill='none' stroke='rgba(255,255,255,0.02)' stroke-width='1'/%3E%3C/svg%3E");
-                background-size: 75px 43.3px;
-                mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, black 20%, transparent 100%);
-                -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, black 20%, transparent 100%);
-            }
-
-            .bg-glow {
-                position: absolute;
-                width: 600px;
-                height: 600px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: radial-gradient(circle, rgba(189, 0, 189, 0.08) 0%, transparent 70%);
-                animation: glow-pulse 6s ease-in-out infinite;
-                pointer-events: none;
-            }
-
-            @keyframes glow-pulse {
-                0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
-                50% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
-            }
-
-            .logo-container {
-                position: relative;
-                z-index: 1;
-                width: min(420px, 80vw);
-                filter: drop-shadow(0 0 30px rgba(189, 0, 189, 0.5));
-            }
-
-            .logo-container svg .edge {
-                stroke: #d0d8e8;
-                stroke-width: 18px;
-                stroke-linecap: round;
-                stroke-miterlimit: 10;
-                fill: none;
-                stroke-dasharray: 400;
-                stroke-dashoffset: 400;
-                animation: draw-line 1.8s ease forwards;
-            }
-
-            .logo-container svg .edge:nth-child(1)  { animation-delay: 0.0s; }
-            .logo-container svg .edge:nth-child(2)  { animation-delay: 0.12s; }
-            .logo-container svg .edge:nth-child(3)  { animation-delay: 0.24s; }
-            .logo-container svg .edge:nth-child(4)  { animation-delay: 0.36s; }
-            .logo-container svg .edge:nth-child(5)  { animation-delay: 0.48s; }
-            .logo-container svg .edge:nth-child(6)  { animation-delay: 0.15s; }
-            .logo-container svg .edge:nth-child(7)  { animation-delay: 0.27s; }
-            .logo-container svg .edge:nth-child(8)  { animation-delay: 0.39s; }
-            .logo-container svg .edge:nth-child(9)  { animation-delay: 0.51s; }
-            .logo-container svg .edge:nth-child(10) { animation-delay: 0.63s; }
-
-            @keyframes draw-line {
-                to { stroke-dashoffset: 0; }
-            }
-
-            canvas#particles {
-                position: absolute;
-                inset: 0;
-                width: 100%;
-                height: 100%;
-                pointer-events: none;
-                z-index: 0;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
         <div class="bg-grid"></div>
@@ -94,20 +10,7 @@
         <canvas id="particles"></canvas>
 
         <div class="logo-container">
-            <svg id="ste-logo" data-name="ste-logo" xmlns="http://www.w3.org/2000/svg" viewBox="-25 -25 410 370">
-                <g id="cube">
-                    <line class="edge" x1="220" y1="61" x2="107" y2="8"/>
-                    <line class="edge" x1="107" y1="8" x2="11" y2="55"/>
-                    <line class="edge" x1="11" y1="56" x2="171" y2="125"/>
-                    <line class="edge" x1="171" y1="125" x2="173" y2="315"/>
-                    <line class="edge" x1="173" y1="317" x2="8" y2="243"/>
-                    <line class="edge" x1="123" y1="59" x2="234" y2="8"/>
-                    <line class="edge" x1="234" y1="8" x2="339" y2="54"/>
-                    <line class="edge" x1="335" y1="54" x2="222" y2="106"/>
-                    <line class="edge" x1="339" y1="54" x2="339" y2="235"/>
-                    <line class="edge" x1="339" y1="240" x2="222" y2="297"/>
-                </g>
-            </svg>
+            <img src="img/logo.svg" alt="S+E Haus" />
         </div>
 
         <script src="particles.js" defer></script>
